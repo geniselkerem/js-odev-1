@@ -3,6 +3,7 @@ let myName = document.querySelector("#myName");
 
 if (username.length > 0) { //if kısmı her zaman true ise çalışır
     myName.innerHTML = `${username}`
+    myName.innerHTML = `${username[0].toUpperCase()}${username.slice(1).toLowerCase()}`
 } else if (username.length === 0) {
         alert("Lütfen Adınızı GİRİN !");
         username = prompt("Adınızı Giriniz: ")
